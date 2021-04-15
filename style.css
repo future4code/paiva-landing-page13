@@ -45,20 +45,13 @@
 
 .img-cel {
     max-height: 300px;
-    /* max-width: 15vw;
-    min-width: 15vw; */
-    /* padding-right: 15%; */
 }
 
 .img-cartao {
     max-height: 250px;
-    /* max-width: 18vw;
-    min-width: 18vw; */
-    /* padding-right: 15%; */
 }
 
 .seta {
-    /* width: 12px; */
     height: 10px;
 }
 
