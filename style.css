@@ -2,3 +2,109 @@
     margin: 0;
     padding: 0;
 }
+
+/* Nossos Produtos */
+
+.nossos-produtos {
+    display: flex;
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; */
+    background-color: #fff;
+}
+
+.conta, .cartao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    width: 50%;
+}
+
+.conta div {
+    width: 60%;
+}
+
+.cartao div {
+    width: 50%;
+}
+
+.conta h3, .cartao h3 {
+    font-size: 3em;
+    color: #FF914D;
+}
+
+.conta div a, .cartao div a {
+    text-decoration: none;
+    color: #FFBD59;
+}
+
+.conta div a:hover, .cartao div a:hover {
+    color: #FF914D;
+}
+
+.conta p, .cartao p {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+.img-cel {
+    height: 300px;
+    /* padding-right: 15%; */
+}
+
+.img-cartao {
+    height: 250px;
+    /* padding-right: 15%; */
+}
+
+.seta {
+    /* width: 12px; */
+    height: 10px;
+}
+
+/* Noso Time */
+
+.nosso-time {
+    background-color: #FF914D;
+    text-align: center;
+}
+
+.nosso-time h3 {
+    font-size: 3em;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.o-time {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.o-time article {
+    width: 300px;
+}
+
+.o-time article img {
+    border-radius: 50%;
+    max-width: 200px;
+    align-self: center;
+}
+
+.o-time article h4 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.o-time article p {
+    padding-top: 10px;
+    text-align: left;
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 420px) {
+    
+}
