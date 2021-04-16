@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,17 +10,56 @@
     <link rel="stylesheet" href="style.css">
     <title>F4Bank - Home</title>
 </head>
+
 <body>
 
     <!-- Túlio -->
-    <header> 
+    <header>
+        <div class="divheader">
+            <img id="logo" src="img/f4bank.png" alt="Logo">
+        </div>
+        <form class="formheader" action="action_page.php" method="post">
+            <div class="textcontainer">
+                <h4>Login:</h4>
+            </div>
 
+            <div class="container">
+                <label for="uname"><b>Agência</b></label>
+                <input type="text" placeholder="Digite sua agência" name="uname" required>
+
+                <label for="psw"><b>N da Conta</b></label>
+                <input type="password" placeholder="Digite sua conta" name="psw" required>
+
+                <button id="blogin" type="submit">Entrar</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Lembrar
+                </label>
+            </div>
+
+            <div class="container" style="background-color: #FF914D">
+                <a href="#">Esqueceu sua senha?</a>
+            </div>
+        </form>
+        <nav>
+            <a href="#quem-somos">Quem Somos</a>
+            <a href="#nossos-produtos">Nossos Produtos</a>
+            <a href="#nosso-time">Nosso Time</a>
+            <a href="#contatos">Contato</a>
+        </nav>
     </header>
 
     <main> Main-Container
         <!-- Quem Somos - Túlio -->
-        <section>
-
+        <section class="quemsomos">
+            <div>
+                <h3>Quem somos?</h3>
+                <p>Em atividade no mercado desde 2020, o f4Bank desenvolve soluções simples, seguras e 100% digitais
+                    para a sua vida.</p>
+                <p>Somos justos e transparentes na conduta, com valor central em respeito a diversidade de cada um.</p>
+                <p>Sempre estamos dispostos a ouvir e valorizar a sua opinião, e de merecer a sua confiança como
+                    cliente.</p>
+                <img id="imagem1" src="img/mulher.png" alt="Foto de Progamadora">
+            </div>
         </section>
 
         <!-- Nossos Produtos - Bianca -->
@@ -84,5 +124,7 @@
         <p>Copyright - LABENU. All Rights Reserved.</p>
     </div>
     
+
 </body>
+
 </html>
