@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Link do css -->
     <link rel="stylesheet" href="style.css">
     <title>F4Bank - Home</title>
@@ -14,13 +15,51 @@
 
     <!-- Túlio -->
     <header>
+        <div class="divheader">
+            <img id="logo" src="img/f4bank.png" alt="Logo">
+        </div>
+        <form class="formheader" action="action_page.php" method="post">
+            <div class="textcontainer">
+                <h4>Login:</h4>
+            </div>
 
+            <div class="container">
+                <label for="uname"><b>Agência</b></label>
+                <input type="text" placeholder="Digite sua agência" name="uname" required>
+
+                <label for="psw"><b>N da Conta</b></label>
+                <input type="password" placeholder="Digite sua conta" name="psw" required>
+
+                <button id="blogin" type="submit">Entrar</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Lembrar
+                </label>
+            </div>
+
+            <div class="container" style="background-color: #FF914D">
+                <a href="#">Esqueceu sua senha?</a>
+            </div>
+        </form>
+        <nav>
+            <a href="#quem-somos">Quem Somos</a>
+            <a href="#nossos-produtos">Nossos Produtos</a>
+            <a href="#nosso-time">Nosso Time</a>
+            <a href="#contatos">Contato</a>
+        </nav>
     </header>
 
-    <main>
+    <main> Main-Container
         <!-- Quem Somos - Túlio -->
-        <section>
-
+        <section class="quemsomos">
+            <div>
+                <h3>Quem somos?</h3>
+                <p>Em atividade no mercado desde 2020, o f4Bank desenvolve soluções simples, seguras e 100% digitais
+                    para a sua vida.</p>
+                <p>Somos justos e transparentes na conduta, com valor central em respeito a diversidade de cada um.</p>
+                <p>Sempre estamos dispostos a ouvir e valorizar a sua opinião, e de merecer a sua confiança como
+                    cliente.</p>
+                <img id="imagem1" src="img/mulher.png" alt="Foto de Progamadora">
+            </div>
         </section>
 
         <!-- Nossos Produtos - Bianca -->
@@ -92,8 +131,53 @@
 
     <!-- Footer - Guilherme -->
     <footer>
-
+        <div class="container">
+            <div class="sec aboutus">
+                <h2>Sobre Nós</h2>
+                <p>Somos um banco 100% digital! Queremos te ajudar a cuidar do seu dinheiro para que você alcance sua independência financeira mais rápido.</p>
+                <ul class="sci">
+                <li><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                <li><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a target="_blank" href="https://www.youtube.com/"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                <li><a target="_blank" href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Recursos</h2>
+                <ul>
+                    <li><a href="#">Sua Conta</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Nossas Tarifas</a></li>
+                    <li><a href="#">Conheça o F4BANK</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contato</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span>1234, R. Presidente Vargas<br>São Paulo, SP, Brasil.</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <p><a href="+55 912345678">+55 912345678</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <p><a href="f4bank@contato.com">f4bank@contato.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
     </footer>
+<<<<<<< HEAD
+=======
+    <div class='copyrightText'> 
+        <p>Copyright - LABENU. All Rights Reserved.</p>
+    </div>
+    
+>>>>>>> master
 
 </body>
 
