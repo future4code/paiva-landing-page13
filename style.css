@@ -1,6 +1,146 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+/* Nossos Produtos */
+
+.nossos-produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    width: 100vw;
+    background-color: #fff;
+}
+
+.conta, .cartao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6% 8%;
+}
+
+.conta div, .cartao div {
+    width: 60%;
+}
+
+.conta h3, .cartao h3 {
+    font-size: 3em;
+    color: #FF914D;
+}
+
+.conta div a, .cartao div a {
+    text-decoration: none;
+    color: #FFBD59;
+}
+
+.conta div a:hover, .cartao div a:hover {
+    color: #FF914D;
+}
+
+.conta p, .cartao p {
+    font-size: 1.8em;
+    padding-bottom: 10px;
+}
+
+.img-cel {
+    max-height: 300px;
+}
+
+.img-cartao {
+    max-height: 250px;
+}
+
+.seta {
+    height: 10px;
+}
+
+/* Noso Time */
+
+.nosso-time {
+    width: 100vw;
+    background-color: #FF914D;
+    text-align: center;
+}
+
+.nosso-time h3 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.o-time {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    padding: 40px;
+}
+
+.o-time article {
+    width: 300px;
+    justify-self: center;
+}
+
+.foto-time {
+    border-radius: 50%;
+    max-width: 200px;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+.informacao-time {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.linkedin-laranja {
+    width: 40px;
+}
+
+.o-time article h4 {
+    text-align: right;
+    font-size: 1.2em;
+    color: #fff;
+    margin-right: 20px;
+}
+
+
+
+@media screen and (max-width: 420px) {
+    .conta, .cartao {
+        flex-direction: column;
+    }
+
+    .conta div, .cartao div {
+        width: 90%;
+    }
+
+    .img-cartao, .img-cel {
+        padding-top: 6%;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    .cartao, .conta {
+        padding: 0;
+        grid-column: 1 / -1;
+        padding: 6% 8%;
+    }
+
+    .o-time {
+        padding: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .o-time article {
+        padding: 4% 0;
+    }
+}
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
