@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Link do css -->
     <link rel="stylesheet" href="style.css">
     <title>F4Bank - Home</title>
@@ -18,48 +19,50 @@
         <div class="divheader">
             <img id="logo" src="img/f4bank.png" alt="Logo">
         </div>
-        <form class="formheader" action="action_page.php" method="post">
-            <div class="textcontainer">
-                <h4>Login:</h4>
-            </div>
-
-            <div class="container">
-                <label for="uname"><b>Agência</b></label>
-                <input type="text" placeholder="Digite sua agência" name="uname" required>
-
-                <label for="psw"><b>N da Conta</b></label>
-                <input type="password" placeholder="Digite sua conta" name="psw" required>
-
-                <button id="blogin" type="submit">Entrar</button>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Lembrar
-                </label>
-            </div>
-
-            <div class="container" style="background-color: #FF914D">
-                <a href="#">Esqueceu sua senha?</a>
-            </div>
-        </form>
         <nav>
             <a href="#quem-somos">Quem Somos</a>
             <a href="#nossos-produtos">Nossos Produtos</a>
             <a href="#nosso-time">Nosso Time</a>
             <a href="#contatos">Contato</a>
         </nav>
+        <form class="formheader" action="action_page.php" method="post">
+
+
+            <div>
+                <label for="uname"><b>Agência: </b></label>
+                <input type="text" placeholder="Digite sua agência" name="uname" required>
+            </div>
+            <div>
+                <label for="psw"><b>Nº da Conta: </b></label>
+                <input type="password" placeholder="Digite sua conta" name="psw" required>
+            </div>
+            <div>
+                <button id="blogin" type="submit">Entrar</button>
+                <label class="lembrar">
+                    <input type="checkbox" checked="checked" name="remember"> Lembrar
+                </label>
+            </div>
+
+
+        </form>
     </header>
 
-    <main> Main-Container
+    <main>
         <!-- Quem Somos - Túlio -->
         <section class="quemsomos">
             <div>
                 <h3>Quem somos?</h3>
+                
                 <p>Em atividade no mercado desde 2020, o f4Bank desenvolve soluções simples, seguras e 100% digitais
                     para a sua vida.</p>
                 <p>Somos justos e transparentes na conduta, com valor central em respeito a diversidade de cada um.</p>
                 <p>Sempre estamos dispostos a ouvir e valorizar a sua opinião, e de merecer a sua confiança como
                     cliente.</p>
-                <img id="imagem1" src="img/mulher.png" alt="Foto de Progamadora">
+                <br>
+                
+                <a href="">Saiba mais <img class="seta" src="img/seta-direita.png" alt=""></a>
             </div>
+            <img id="imagem1" src="img/mulher.png" alt="Foto de Progamadora">
         </section>
 
         <!-- Nossos Produtos - Bianca -->
@@ -67,20 +70,21 @@
             <article class="conta">
                 <div>
                     <h3>Conta F4Bank</h3>
-                    <p>Nossa conta é totalmente digital e gratuita, faça como milhares de Brasileiros e venha fazer parte
-                    do F4Bank. </p>
-                    <a href="#">Venha conhecer <img class="seta" src="/img/seta-direita.png" alt=""></a>
+                    <p>Nossa conta é totalmente digital e gratuita, faça como milhares de Brasileiros e venha fazer
+                        parte
+                        do F4Bank. </p>
+                    <a href="#">Venha conhecer <img class="seta" src="img/seta-direita.png" alt=""></a>
 
                 </div>
-                <img class="img-cel" src="/img/cel.png" alt="">
+                <img class="img-cel" src="img/cel.png" alt="">
             </article>
             <article class="cartao">
                 <div>
                     <h3>Cartão de Crédito</h3>
                     <p>Sem anuidade, moderno e feito para você. </p>
-                    <a href="">Saiba mais <img class="seta" src="/img/seta-direita.png" alt=""></a>
+                    <a href="">Saiba mais <img class="seta" src="img/seta-direita.png" alt=""></a>
                 </div>
-                <img class="img-cartao" src="/img/cartao.png" alt="cartaoF4bank">
+                <img class="img-cartao" src="img/cartao.png" alt="cartaoF4bank">
             </article>
 
         </section>
@@ -91,33 +95,33 @@
             <h3>Nosso Time</h3>
             <div class="o-time">
                 <article>
-                    <img class="foto-time" src="/img/foto-bianca.jpg" alt="foto-bianca">
+                    <img class="foto-time" src="img/foto-bianca.jpg" alt="foto-bianca">
                     <div class="informacao-time">
                         <div>
                             <h4>Bianca Leonardo</h4>
                             <h4>Desenvolvedora Front-End</h4>
                         </div>
-                        <a href=""><img class="linkedin-laranja" src="/img/linkedin-laranja.png" alt=""></a>
+                        <a href=""><img class="linkedin-laranja" src="img/linkedin-laranja.png" alt=""></a>
                     </div>
                 </article>
                 <article>
-                    <img class="foto-time" src="/img/foto-bianca.jpg" alt="foto-bianca">
+                    <img class="foto-time" src="img/foto-bianca.jpg" alt="foto-bianca">
                     <div class="informacao-time">
                         <div>
                             <h4>Túlio Dias</h4>
                             <h4>Desenvolvedora Front-End</h4>
                         </div>
-                        <a href=""><img class="linkedin-laranja" src="/img/linkedin-laranja.png" alt=""></a>
+                        <a href=""><img class="linkedin-laranja" src="img/linkedin-laranja.png" alt=""></a>
                     </div>
                 </article>
                 <article>
-                    <img class="foto-time" src="/img/foto-bianca.jpg" alt="foto-bianca">
+                    <img class="foto-time" src="img/foto-bianca.jpg" alt="foto-bianca">
                     <div class="informacao-time">
                         <div>
                             <h4>Guilherme Soutello</h4>
                             <h4>Desenvolvedora Front-End</h4>
                         </div>
-                        <a href=""><img class="linkedin-laranja" src="/img/linkedin-laranja.png" alt=""></a>
+                        <a href=""><img class="linkedin-laranja" src="img/linkedin-laranja.png" alt=""></a>
                     </div>
                 </article>
             </div>
@@ -134,12 +138,17 @@
         <div class="container">
             <div class="sec aboutus">
                 <h2>Sobre Nós</h2>
-                <p>Somos um banco 100% digital! Queremos te ajudar a cuidar do seu dinheiro para que você alcance sua independência financeira mais rápido.</p>
+                <p>Somos um banco 100% digital! Queremos te ajudar a cuidar do seu dinheiro para que você alcance sua
+                    independência financeira mais rápido.</p>
                 <ul class="sci">
-                <li><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                <li><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a target="_blank" href="https://www.youtube.com/"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                <li><a target="_blank" href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook-official"
+                                aria-hidden="true"></i></a></li>
+                    <li><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"
+                                aria-hidden="true"></i></a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/"><i class="fa fa-youtube-play"
+                                aria-hidden="true"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a></li>
                 </ul>
             </div>
             <div class="sec quicklinks">
@@ -169,12 +178,12 @@
                 </ul>
             </div>
         </div>
-        
+
     </footer>
-    <div class='copyrightText'> 
+    <div class='copyrightText'>
         <p>Copyright - LABENU. All Rights Reserved.</p>
     </div>
-    
+
 
 </body>
 

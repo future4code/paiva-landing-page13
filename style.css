@@ -59,7 +59,7 @@
 
 .nosso-time {
     width: 100vw;
-    background-color: #FF914D;
+    background-color: #f5bf6f;
     text-align: center;
 }
 
@@ -318,11 +318,18 @@ header {
     height: 10%;
     width: 100vw;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content:space-between;
-    
+    align-items: center;
+    color: #fff;
 }
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5em;
+    padding-right: 20px;
+}
+ 
 
 #logo {
     width: 150px;
@@ -330,16 +337,63 @@ header {
 }
 
 .formheader {
-    align-self: center;
     padding: 10px;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:right;
+}
+
+#blogin {
+    background-color: #FABD60;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border:  #FABD60;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.lembrar {
+    margin-top: 10px;
+}
+
+.formheader div {
+    display: flex;
+    justify-self: right;
+    right: 0;
+}
+
+.formheader input {
+    height: 30px;
+}
+
+.formheader label {
+    padding: 
 }
 
 .quemsomos {
-    background-color: #fdcf8a;
+    background-color: #ffcf88;
     width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.quemsomos div a {
+    text-decoration: none;
+    color: #FF914D;
+    
+}
+
+.quemsomos div {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    grid-column: 1/2;
+    padding: 6% 8%;
+    justify-content: right;
 }
 
 ul {
@@ -357,9 +411,36 @@ li {
 #imagem1 {
     width: 50%;
     justify-self: center;
+    padding: 6% 8%;
 }
 
 h3 {
     font-size: 3em;
     padding-top: 20px;
+    font-weight: 900;
+    color:#FF914D;
+    margin-bottom: 10px;
 }
+
+.quemsomos div p {
+    font-size: 1.8em;
+    padding-bottom: 10px;
+    /* color: white; */
+}
+
+@media screen and (max-widht:420px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr); 
+    }
+
+    header .divheader {
+        grid-column: 1/-1;
+    }
+
+    /* header {
+        flex-direction: column;
+    } */
+}
+
