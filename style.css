@@ -9,7 +9,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    width: 100vw;
     background-color: #fff;
 }
 
@@ -58,7 +57,6 @@
 /* Noso Time */
 
 .nosso-time {
-    width: 100vw;
     background-color: #f5bf6f;
     text-align: center;
 }
@@ -111,23 +109,26 @@
 header {
     background-color: #FF914D;
     height: 10%;
-    /*width: 100vw;*/
     display: flex;
     justify-content:space-between;
     align-items: center;
     color: #fff;
 }
 
+header nav {
+    margin-left: 12%;
+}
+
 header nav a {
     text-decoration: none;
     color: #fff;
-    font-size: 2.5em;
-    padding-right: 20px;
+    font-size: 2.3em;
+    margin-right: 20px;
 }
 
 header nav a:hover {
     color: #ffcf88;
-    border-bottom: 2px solid #ffcf88;
+    border-bottom: 3px solid #ffcf88;
 }
 
 #logo {
@@ -154,10 +155,6 @@ header nav a:hover {
     margin-right: 10px;
 }
 
-.lembrar {
-
-}
-
 .formheader div {
     display: flex;
     justify-self: right;
@@ -173,7 +170,6 @@ header nav a:hover {
 
 .quemsomos {
     background-color: #ffcf88;
-    width: 100vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -211,28 +207,15 @@ h3 {
 .quemsomos div p {
     font-size: 1.8em;
     padding-bottom: 10px;
-    /* color: white; */
 }
 
 
-/* Footer
-
-body {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
-    background-color: white;
-}*/
+/* Footer */
 
 footer {
-    /* position: relative; */
-    width: 100vw;
     height: auto;
     background-color: #ff914c;
     display: flex;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
 }
 
@@ -242,16 +225,10 @@ footer .container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     justify-items: center;
-    /* flex-wrap: wrap; */
-    /* flex-direction: row; */
 }
 
 footer .container .sec {
     margin-right: 30px;
-}
-
-footer .container .sec.aboutus {
-    /* width: 40%; */
 }
 
 footer .container h2 {
@@ -325,7 +302,6 @@ footer p {
 }
 
 .contact {
-    /* width: calc(35% - 60px); */
     margin-right: 0 !important;
 }
 
@@ -358,7 +334,7 @@ footer p {
 }
 
 .copyrightText {
-    width: 100vw;
+    /* width: 100vw; */
     text-align: center;
     color: white;
     background-color: #ff914c;
@@ -370,11 +346,106 @@ footer p {
     header {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: 150px 50px;
         width: 100vw;
 
     }
     .divheader {
-        grid-column: 1/-1;
+        grid-column: 1/ span 1;
     }
+
+    .formheader {
+        grid-column: 2 / span 1;
+        grid-row: 1;
+        justify-items: left;
+        width: 0;
+        padding: 0;
+    }
+
+    .formheader div:nth-child(3){
+        width: 150px;
+    }
+
+    .formheader div {
+        justify-self: left;
+    }
+
+    .formheader label {
+        font-size: 16px;
+    }
+
+    .formheader input {
+        width: 100px;
+    }
+
+    header nav {
+        grid-column: 1 / -1;
+        padding-left: 15px;
+        margin-left: 0;
+    }
+
+    header nav a {
+        font-size: 100%;
+    }
+
+    .quemsomos {
+        grid-template-columns: 1fr;
+        grid-template-rows:  1fr 50%;
+    }
+
+    #imagem1 {
+        width: 60%;
+    }
+
+    .nossos-produtos {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .conta {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 250px;
+        justify-items: center;
+        padding: 0;
+    }
+
+    .cartao {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 290px;
+        justify-items: center;
+        padding: 0;
+    }
+
+    .img-cel {
+        max-height: 200px;
+    }
+
+    .o-time {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        padding: 20px 40px;
+    }
+
+    .o-time article {
+        margin-top: 20px;
+    }
+
+    footer .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 160px 150px;
+        justify-items: left;
+    }
+
+
+    .quicklinks, .contact, .aboutus {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .copyrightText {
+        padding-top: 20px;
+    }
+
 }
