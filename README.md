@@ -17,7 +17,7 @@ Responsividade para aparelho celular.
 
 ### :rocket: Link Surge 
 
-piquant-cake.surge.sh
+https://piquant-cake.surge.sh/
 
 <br />
 
