@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Nossos Produtos */
+
+.nossos-produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    background-color: #fff;
+}
+
+.conta, .cartao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6% 8%;
+}
+
+.conta div, .cartao div {
+    width: 60%;
+}
+
+.conta h3, .cartao h3 {
+    font-size: 3em;
+    color: #FF914D;
+}
+
+.conta div a, .cartao div a {
+    text-decoration: none;
+    color: #FFBD59;
+}
+
+.conta div a:hover, .cartao div a:hover {
+    color: #FF914D;
+}
+
+.conta p, .cartao p {
+    font-size: 1.8em;
+    padding-bottom: 10px;
+}
+
+.img-cel {
+    max-height: 300px;
+}
+
+.img-cartao {
+    max-height: 250px;
+}
+
+.seta {
+    height: 10px;
+}
+
+/* Noso Time */
+
+.nosso-time {
+    background-color: #f5bf6f;
+    text-align: center;
+}
+
+.nosso-time h3 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.o-time {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    padding: 40px;
+}
+
+.o-time article {
+    width: 300px;
+    justify-self: center;
+}
+
+.foto-time {
+    border-radius: 50%;
+    max-width: 200px;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+.informacao-time {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.linkedin-laranja {
+    width: 40px;
+}
+
+.o-time article h4 {
+    text-align: right;
+    font-size: 1.2em;
+    color: #fff;
+    margin-right: 20px;
+}
+
+/* Header - Túlio */
+
+header {
+    background-color: #FF914D;
+    height: 10%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    color: #fff;
+}
+
+header nav {
+    margin-left: 12%;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.3em;
+    margin-right: 20px;
+}
+
+header nav a:hover {
+    color: #ffcf88;
+    border-bottom: 3px solid #ffcf88;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+}
+
+.formheader {
+    padding: 10px;
+    font-size: 1.2em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    width: 25%;
+    margin: 1% 2%;
+}
+
+#blogin {
+    background-color: #FABD60;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border:  #FABD60;
+    margin-right: 10px;
+}
+
+.formheader div {
+    display: flex;
+    justify-self: right;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.formheader input {
+    height: 30px;
+}
+
+/* Quem Somos */
+
+.quemsomos {
+    background-color: #ffcf88;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.quemsomos div a {
+    text-decoration: none;
+    color: #FF914D;
+    
+}
+
+.quemsomos div {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/2;
+    padding: 6% 8%;
+    justify-content: right;
+}
+
+#imagem1 {
+    width: 50%;
+    justify-self: center;
+    padding: 6% 8%;
+}
+
+h3 {
+    font-size: 3em;
+    padding-top: 20px;
+    font-weight: 900;
+    color:#FF914D;
+    margin-bottom: 10px;
+}
+
+.quemsomos div p {
+    font-size: 1.8em;
+    padding-bottom: 10px;
+}
+
+
+/* Footer */
+
+footer {
+    height: auto;
+    background-color: #ff914c;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .container {
+    padding: 6% 8%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+footer .container .sec {
+    margin-right: 30px;
+}
+
+footer .container h2 {
+    position: relative;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .container h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: black;
+}
+
+footer p {
+    color:black;
+}
+
+.sci {
+    margin-top: 20px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+}
+.sci li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background:#222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sci li a:hover {
+    background:white
+}
+
+.sci li a .fa {
+    color:#fabd60;
+    font-size: 20px;
+}
+
+.quicklinks {
+    position: relative;
+}
+
+.quicklinks ul li {
+    list-style: none;
+}
+
+.quicklinks ul li a {
+    color: black;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.quicklinks ul li a:hover {
+    color: #fabd60;
+}
+
+.contact {
+    margin-right: 0 !important;
+}
+
+.contact .info {
+    position: relative;
+}
+
+.contact .info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1) {
+    color: black;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact .info li span {
+    color: black;
+}
+
+.contact .info li a {
+    color: black;
+    text-decoration: none;
+}
+
+.contact .info li a:hover {
+    color: #fabd60;
+}
+
+.copyrightText {
+    /* width: 100vw; */
+    text-align: center;
+    color: white;
+    background-color: #ff914c;
+}
+
+/*Responsividade*/
+
+@media screen and (max-width: 420px) {
+    header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 150px 50px;
+        width: 100vw;
+
+    }
+    .divheader {
+        grid-column: 1/ span 1;
+    }
+
+    .formheader {
+        grid-column: 2 / span 1;
+        grid-row: 1;
+        justify-items: left;
+        width: 0;
+        padding: 0;
+    }
+
+    .formheader div:nth-child(3){
+        width: 150px;
+    }
+
+    .formheader div {
+        justify-self: left;
+    }
+
+    .formheader label {
+        font-size: 16px;
+    }
+
+    .formheader input {
+        width: 100px;
+    }
+
+    header nav {
+        grid-column: 1 / -1;
+        padding-left: 15px;
+        margin-left: 0;
+    }
+
+    header nav a {
+        font-size: 100%;
+    }
+
+    .quemsomos {
+        grid-template-columns: 1fr;
+        grid-template-rows:  1fr 50%;
+    }
+
+    #imagem1 {
+        width: 60%;
+    }
+
+    .nossos-produtos {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .conta {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 250px;
+        justify-items: center;
+        padding: 0;
+    }
+
+    .cartao {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 290px;
+        justify-items: center;
+        padding: 0;
+    }
+
+    .img-cel {
+        max-height: 200px;
+    }
+
+    .o-time {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        padding: 20px 40px;
+    }
+
+    .o-time article {
+        margin-top: 20px;
+    }
+
+    footer .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 160px 150px;
+        justify-items: left;
+    }
+
+
+    .quicklinks, .contact, .aboutus {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .copyrightText {
+        padding-top: 20px;
+    }
+
+}
